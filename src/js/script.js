@@ -1,6 +1,10 @@
 let char = new Knight('Jonh')
 let monster = new littleMonster()
 
-console.log(char.name)
-
-console.log(monster.name)
+const stage = new Stage (
+    char, 
+    monster,
+    document.querySelector('#char'),
+    document.querySelector('#monster')
+)
+stage.start()
